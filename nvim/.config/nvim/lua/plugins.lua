@@ -15,5 +15,8 @@ return{
   {"j-hui/fidget.nvim"}, 
   {"petertriho/nvim-scrollbar"},
 
-  {"m4xshen/autoclose.nvim"}
+  {"m4xshen/autoclose.nvim"},
+  
+  {"NeogitOrg/neogit", dependencies={"nvim-lua/plenary.nvim", "sindrets/diffview.nvim", "nvim-telescope/telescope.nvim"}},
+  {"lewis6991/gitsigns.nvim"}
 }
