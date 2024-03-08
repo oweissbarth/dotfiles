@@ -36,6 +36,27 @@ require("catppuccin").setup({
 })
 vim.cmd.colorscheme "catppuccin"
 
+local _border = "single"
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+  vim.lsp.handlers.hover, {
+    border = _border
+  }
+)
+
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
+  vim.lsp.handlers.signature_help, {
+    border = _border
+  }
+)
+
+vim.diagnostic.config{
+  float={border=_border}
+}
+
+require("lspconfig.ui.windows").default_options = {
+  border = _border
+}
+
 vim.cmd [[
 augroup kitty_mp
   autocmd!
@@ -56,6 +77,16 @@ local lsp_zero = require('lsp-zero')
 lsp_zero.preset("recommended")
 
 local cmp = require("cmp")
+cmp.setup{
+  window = {
+    completion = {
+      border = _border
+    },
+    documentation = {
+      border = _border
+    }
+  }
+}
 lsp_zero.on_attach(function(client, bufnr)
   -- see :help lsp-zero-keybindings
   -- to learn the available actions
