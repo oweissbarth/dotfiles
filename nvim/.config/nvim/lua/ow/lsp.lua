@@ -26,4 +26,4 @@ require('mason-lspconfig').setup({
   },
 })
 
-
+require('lspconfig').qmlls.setup{}

@@ -1,6 +1,7 @@
 return{
-	{'nvim-telescope/telescope.nvim', tag = '0.1.5', dependencies={"nvim-lua/plenary.nvim"}},
-	{"nvim-treesitter/nvim-treesitter", build=":TSUpdate"},
+	{'nvim-telescope/telescope.nvim', tag = '0.1.8', dependencies={"nvim-lua/plenary.nvim"}},
+  {'nvim-telescope/telescope-ui-select.nvim'},
+  {"nvim-treesitter/nvim-treesitter", build=":TSUpdate"},
   {"catppuccin/nvim", name="catppuccin", priority=1000},
 	
 	{'williamboman/mason.nvim'},
@@ -20,5 +21,11 @@ return{
   {"NeogitOrg/neogit", dependencies={"nvim-lua/plenary.nvim", "sindrets/diffview.nvim", "nvim-telescope/telescope.nvim"}},
   {"lewis6991/gitsigns.nvim"},
 
-  {"github/copilot.vim"}
+  {"mhanber/iter.nvim"},
+  {"github/copilot.vim"},
+  {"b0o/blender.nvim", dependencies={"MunifTanjim/nui.nvim", "grapp-dev/nui-components.nvim", "mfussenegger/nvim-dap", "LiadOz/nvim-dap-repl-highlights", "mhanberg/iter.nvim"}},
+
+  {'linux-cultist/venv-selector.nvim', dependencies = { 'neovim/nvim-lspconfig', 'nvim-telescope/telescope.nvim', 'mfussenegger/nvim-dap-python' }, branch="regexp"},
+
+  {"Civitasv/cmake-tools.nvim", dependencies= {"nvim-lua/plenary.nvim"}}
 }
