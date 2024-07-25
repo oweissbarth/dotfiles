@@ -27,5 +27,7 @@ return{
 
   {'linux-cultist/venv-selector.nvim', dependencies = { 'neovim/nvim-lspconfig', 'nvim-telescope/telescope.nvim', 'mfussenegger/nvim-dap-python' }, branch="regexp"},
 
-  {"Civitasv/cmake-tools.nvim", dependencies= {"nvim-lua/plenary.nvim"}}
+  {"Civitasv/cmake-tools.nvim", dependencies= {"nvim-lua/plenary.nvim"}},
+
+  {"epwalsh/obsidian.nvim"}
 }

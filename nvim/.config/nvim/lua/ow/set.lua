@@ -12,3 +12,5 @@ vim.opt.hlsearch = false
 vim.opt.termguicolors= true
 
 vim.g.mapleader = " "
+
+vim.opt.conceallevel = 2
