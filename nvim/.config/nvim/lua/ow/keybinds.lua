@@ -1,10 +1,9 @@
 vim.g.mapleader = " "
 
--- telescope
-local telescope_builtin = require("telescope.builtin")
-vim.keymap.set("n", "<leader>p", telescope_builtin.find_files, {})
-vim.keymap.set("n", "<leader>f", telescope_builtin.live_grep, {})
-vim.keymap.set("n", "<leader>o", telescope_builtin.lsp_document_symbols, {})
+local fzf = require("fzf-lua")
+vim.keymap.set("n", "<leader>p", fzf.files, {})
+vim.keymap.set("n", "<leader>f", fzf.live_grep, {})
+vim.keymap.set("n", "<leader>o", fzf.lsp_document_symbols, {})
 vim.keymap.set("n", "<leader>q", function() vim.lsp.buf.code_action({apply = true}) end, {})
 
 -- obsidian.nvim
