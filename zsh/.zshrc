@@ -44,13 +44,13 @@ alias icat="kitty +kitten icat"
 alias vim=nvim
 alias ssh="kitten ssh"
 
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+# Configure path
 export PATH=$PATH:$HOME/.local/bin/
-export PATH=$PATH:$HOME/tools/tizenstudio/install/tools:$HOME/tools/tizenstudio/install/tools/ide/bin/
 export PATH=$PATH:$HOME/.cargo/bin
-
-#ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=4"
+export PATH=/home/oliver/tools/android-studio/jbr/bin/:$PATH
+export ANDROID_HOME=/home/oliver/tools/android-sdk
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
+export CAPACITOR_ANDROID_STUDIO_PATH=/home/oliver/tools/android-studio/bin/studio.sh
+export PATH="/home/oliver/tools/flutter/bin/:$PATH"
