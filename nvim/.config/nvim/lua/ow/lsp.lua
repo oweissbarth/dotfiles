@@ -18,6 +18,20 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
+lsp_zero.format_on_save({
+  format_opts = {
+    async = false,
+    timeout_ms = 2000,
+  },
+  servers = {
+    ["clangd"] = {"cpp"},
+    ["qmlls"] = {"qml"},
+  },
+})
+
+vim.diagnostic.config({ virtual_text  = false})
+require('tiny-inline-diagnostic').setup()
+
 require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {"clangd", "rust_analyzer", "pyright", "cmake"},
@@ -25,5 +39,4 @@ require('mason-lspconfig').setup({
     lsp_zero.default_setup,
   },
 })
-
 require('lspconfig').qmlls.setup{}

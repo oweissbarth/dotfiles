@@ -12,6 +12,8 @@ return{
 	{'hrsh7th/nvim-cmp'},
 	{'L3MON4D3/LuaSnip'},
 
+  {'rachartier/tiny-inline-diagnostic.nvim', event = "VeryLazy", priority=1000},
+
   {"nvim-lualine/lualine.nvim", dependencies={"nvim-tree/nvim-web-devicons"}},
   {"j-hui/fidget.nvim"}, 
   {"petertriho/nvim-scrollbar"},
