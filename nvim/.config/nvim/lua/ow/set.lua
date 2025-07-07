@@ -14,3 +14,12 @@ vim.opt.termguicolors= true
 vim.g.mapleader = " "
 
 vim.opt.conceallevel = 2
+
+vim.api.nvim_set_option("clipboard", "unnamedplus")
+
+vim.filetype.add({
+  pattern = {
+    [".*Jenkinsfile"] = "groovy",
+    ["Dockerfile.*"] = "dockerfile",
+  }
+})
