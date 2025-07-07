@@ -1,4 +1,3 @@
-vim.iter = require("iter")
 require("blender").setup{
   profiles = {
     {

@@ -21,7 +21,6 @@ return{
   {"NeogitOrg/neogit", dependencies={"nvim-lua/plenary.nvim", "sindrets/diffview.nvim", "nvim-telescope/telescope.nvim"}},
   {"lewis6991/gitsigns.nvim"},
 
-  {"mhanber/iter.nvim"},
   {"github/copilot.vim"},
   {"b0o/blender.nvim", dependencies={"MunifTanjim/nui.nvim", "grapp-dev/nui-components.nvim", "mfussenegger/nvim-dap", "LiadOz/nvim-dap-repl-highlights", "mhanberg/iter.nvim"}},
 
