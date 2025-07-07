@@ -7,6 +7,7 @@ vim.keymap.set("n", "<leader>o", fzf.lsp_document_symbols, {})
 vim.keymap.set("n", "<leader>q", function() vim.lsp.buf.code_action({apply = true}) end, {})
 
 -- obsidian.nvim
-vim.keymap.set("n", "<leader>nd", function() vim.cmd("ObsidianToday") end)
-vim.keymap.set("n", "<leader>ny", function() vim.cmd("ObsidianYesterday") end)
-vim.keymap.set("n", "<leader>nf", function() vim.cmd("ObsidianSearch") end)
+vim.keymap.set("n", "<leader>nd", function() vim.cmd("Obsidian today") end)
+vim.keymap.set("n", "<leader>ny", function() vim.cmd("Obsidian yesterday") end)
+vim.keymap.set("n", "<leader>nf", function() vim.cmd("Obsidian search") end)
+vim.keymap.set("n", "<leader>nt", function() vim.cmd(":e ~/notes/Todo.md") end)

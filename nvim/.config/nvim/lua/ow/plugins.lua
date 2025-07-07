@@ -28,5 +28,6 @@ return{
 
   {"Civitasv/cmake-tools.nvim", dependencies= {"nvim-lua/plenary.nvim"}},
 
-  {"epwalsh/obsidian.nvim"}
+  {"obsidian-nvim/obsidian.nvim"},
+  {"MeanderingProgrammer/render-markdown.nvim", dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }}
 }
