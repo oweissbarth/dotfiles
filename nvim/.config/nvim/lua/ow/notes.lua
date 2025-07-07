@@ -1,5 +1,6 @@
 require("obsidian").setup({
   ui = False,
+  legacy_commands=false,
   workspaces = {
     {
       name = "work",
